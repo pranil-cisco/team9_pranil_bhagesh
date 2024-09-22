@@ -14,6 +14,7 @@ client.
     1. search.py 
     2. client.py 
     3. server.py 
+    4. default_text.txt
 
 Note - 
  1. Run the server.py file first in terminal 
