@@ -1,4 +1,4 @@
-# My Project
+                               #Cisco Sep Training 2024
 
             Project - Network based pattern searching M S Sriharsha 
 
@@ -15,37 +15,9 @@ client.
     2. client.py 
     3. server.py 
 
-The program - search.py - should have a class named Search that 
-has the following methods 
-    a. __init__ - takes the filename as an argument ( a default filename 
-    could also be specified in the testing phase ) and reads every line 
-    and puts in a list which is added as an attribute to the object 
-    b. clean - this method removes the special characters by using regular 
-    expressions and any of the functional programming tools like map or 
-    list comprehension 
-    c. getLines - takes a word or pattern as an argument and extracts 
-    every line that contains the pattern/word into a list in the following 
-    format 
-A list where the first element is the word the user is searching for, 
-and a series of tuples that has two elements viz., line number and the 
-actual line. For example if the user is searching for the word “land” and 
-if the word is present in two lines - line number 3 and 7, the list would 
-look like 
-[“land”,(3,”This is my land”),(7,”I love my land”)] 
-
-The program - client.py - should connect to the server and send the 
-filename ( if the default filename is not specified in the search.py in the 
-__init__ of search.py ) and the word that need to be searched. The 
-result got from the server in the json format need to be parsed and 
-result displayed to the user
-
-The program - server.py - listens for the client connection at a 
-particular port. It accepts the filename ( if the default filename is not 
-specified in the search.py in the __init__ of search.py ) and the word to 
-be searched. The server imports the search module, then creates the 
-object of the Search class and use the helper methods there to get the 
-result. 
-
-The result got in this format 
-[“land”,(3,”This is my land”),(7,”I love my land”)] 
-need to be converted to json format and send to the client.
+Note - 
+ 1. Run the server.py file first in terminal 
+ 2. then run client.py file
+ 3. input the filename you want to search for
+ 4. Enter the word you want to search for
+ 5. Type 'Exit' to close the client when finished
